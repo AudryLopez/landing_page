@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 100%;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.left {
+  justify-content: flex-start;
+  width: 150px;
+  height: 80px;
+  background-color: blue;
+}
+
+.center {
+  justify-content: center;
+  width: 150px;
+  height: 80px;
+  background-color: red;
+}
+
+.right {
+  justify-content: flex-end;
+  width: 150px;
+  height: 80px;
+  background-color: green;
+}
+
+.mainButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 45px;
+  border-radius: 25px;
+  cursor: pointer;
+}
