@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 100%;
+  width: 144rem;
   position: fixed;
+  height: 4rem;
   left: 0;
   top: 0;
   background-color: hsl(0, 0%, 100%);
@@ -12,22 +13,34 @@
 .left {
   justify-content: flex-start;
   display: flex;
-  width: 150px;
-  height: 80px;
+  margin-block: auto;
+  width: 15rem;
 }
 
 .center {
   justify-content: center;
   display: flex;
-  width: 150px;
-  height: 80px;
+  align-items: center;
+  width: 15rem;
+  gap: 1rem;
+}
+
+.center a {
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #8d99ae;
+  transition: color .5s border-bottom .5s;
+}
+
+.center a:hover {
+  color: #001219;
+  border-bottom: 0.2rem solid hsl(136, 65%, 51%);
 }
 
 .right {
   justify-content: flex-end;
   display: flex;
-  width: 150px;
-  height: 80px;
+  width: 15rem;
   align-items: center;
 }
 
@@ -41,4 +54,9 @@
   background-color: hsl(136, 65%, 51%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+  transition: background-color .5s;
+}
+
+.Btn:hover {
+  background-color: hsl(136, 36%, 39%);
 }
